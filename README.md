@@ -80,40 +80,6 @@ The project integrates **data engineering, statistical analysis, and algorithmic
 | Reporting | Power BI · Python Visualizations |
 
 ---
-
-## 📁 Folder Structure  
-
-```markdown
-psychometric_item_pipeline/
-│
-├── 📘 README.md                         # Project documentation
-│
-├── 📂 notebooks/
-│   ├── 01_data_extraction_aws.ipynb     # Pipeline connection and queries to AWS
-│   ├── 02_data_cleaning.ipynb           # Data preprocessing and validation
-│   ├── 03_scoring_eda.ipynb             # Scoring logic and exploratory statistics
-│   ├── 04_item_analysis.ipynb           # Difficulty & discrimination indices
-│   ├── 05_bees_algorithm_optimization.ipynb # Optimization routine for item selection
-│
-├── 📂 src/
-│   ├── aws_pipeline.py                  # AWS data extraction scripts
-│   ├── cleaning_utils.py                # Data cleaning helper functions
-│   ├── scoring_functions.py             # Item scoring and metrics
-│   ├── bees_algorithm.py                # Bees Algorithm optimization logic
-│   ├── item_analysis.py                 # Item difficulty/discrimination calculations
-│
-├── 📂 data/
-│   ├── raw_data/                        # Extracted data from AWS
-│   ├── cleaned_data.csv                 # Cleaned dataset
-│   ├── item_metrics.csv                 # Item-level indicators
-│   └── optimized_versions.csv           # Optimized 24/48-item versions
-│
-├── 📂 results/
-│   ├── bees_convergence_plot.png        # Optimization convergence visualization
-│   ├── item_difficulty_distribution.png # Histogram of item difficulties
-│   ├── group_performance_summary.pdf    # Group-level performance report
-│
-└── 📂 docs/
     ├── bees_algorithm_explained.md      # Technical explanation of algorithm
     ├── psychometric_formulas.md         # Difficulty/discrimination equations
     └── lessons_learned.md
